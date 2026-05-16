@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { submitToFormspree } from '../lib/formspree';
 
 const SERVICE_LABELS: Record<string, string> = {
+  'brand-identity': 'Brand Identity',
   'web-design': 'Web Design',
   'web-development': 'Web Development',
   'ui-design': 'UI Design',
@@ -165,6 +166,7 @@ export default function Contact() {
                     style={{ color: form.project ? '#E8E0D4' : 'rgba(232,224,212,0.2)' }}
                   >
                     <option value="" disabled>Select a service</option>
+                    <option value="brand-identity">Brand Identity</option>
                     <option value="web-design">Web Design</option>
                     <option value="web-development">Web Development</option>
                     <option value="ui-design">UI Design</option>
